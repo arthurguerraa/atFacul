@@ -16,110 +16,82 @@
   <body>
     <header id="header"></header>
     <main id="conceito">
-      <section>
-        <h1 style="text-align: center">Distribuição de Frequência</h1>
-        <p>
-          A distribuição de frequência é uma tabela que organiza os dados em
-          classes ou categorias, mostrando a frequência (contagem ou proporção)
-          com que cada valor ou intervalo ocorre em um conjunto de dados.
-        </p>
-        <p>
-          A frequência relativa (\( f_r \)) de uma classe pode ser calculada
-          por:
-        </p>
-        <div class="formula">
-          \[ f_r = \frac{f}{n}, \text{ onde } f \text{ é a frequência absoluta e
-          } n \text{ é o total de observações.} \]
-        </div>
-        <p>
-          Já a frequência acumulada (\( F_a \)) é a soma das frequências
-          absolutas das classes anteriores e da classe atual:
-        </p>
-        <div class="formula">
-          \[ F_a = \sum_{i=1}^k f_i, \text{ para todas as classes } i. \]
-        </div>
-      </section>
+  <section>
+    <h1 style="text-align: center">Programação Linear</h1>
+    <p>
+      A Programação Linear é uma técnica da matemática aplicada utilizada para
+      encontrar a melhor solução possível em problemas que envolvem a otimização
+      de recursos limitados. Seu objetivo principal é maximizar ou minimizar uma
+      função linear, respeitando um conjunto de restrições também lineares.
+    </p>
+    <p>
+      Esses problemas surgem frequentemente em situações reais, como planejamento
+      de produção, logística, transporte e alocação de recursos, onde é necessário
+      tomar decisões eficientes com base em limites previamente definidos.
+    </p>
+  </section>
 
-      <section>
-        <h1 style="text-align: center">Correlação e Regressão Linear</h1>
-        <p>
-          A correlação mede a força e a direção do relacionamento entre duas
-          variáveis. O coeficiente de correlação de Pearson (\( r \)) é dado
-          por:
-        </p>
-        <div class="formula">
-          \[ r = \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i -
-          \bar{y})}{\sqrt{\sum_{i=1}^n (x_i - \bar{x})^2 \sum_{i=1}^n (y_i -
-          \bar{y})^2}} \]
-        </div>
-        <p>
-          A regressão linear simples modela a relação entre duas variáveis com
-          uma equação da forma:
-        </p>
-        <div class="formula">\[ y = \beta_0 + \beta_1 x + \varepsilon, \]</div>
-        <p>
-          onde \( \beta_0 \) é o intercepto, \( \beta_1 \) é o coeficiente
-          angular e \( \varepsilon \) é o termo de erro.
-        </p>
-      </section>
+  <section>
+    <h1 style="text-align: center">Função Objetivo</h1>
+    <p>
+      A função objetivo representa aquilo que se deseja otimizar no problema,
+      podendo ser a maximização do lucro ou a minimização do custo. Ela é expressa
+      como uma combinação linear das variáveis de decisão.
+    </p>
+    <div class="formula">
+      \[
+        \text{Maximizar ou Minimizar } Z = c_1x_1 + c_2x_2 + \dots + c_nx_n
+      \]
+    </div>
+    <p>
+      Onde \( x_1, x_2, \dots, x_n \) são as variáveis de decisão e
+      \( c_1, c_2, \dots, c_n \) representam os coeficientes associados a cada
+      variável.
+    </p>
+  </section>
 
-      <section>
-        <h1 style="text-align: center">Probabilidade</h1>
-        <p>
-          A probabilidade mede a chance de ocorrência de um evento. A fórmula
-          básica é:
-        </p>
-        <div class="formula">
-          \[ P(A) = \frac{\text{número de casos favoráveis}}{\text{número total
-          de casos}}. \]
-        </div>
-        <p>
-          Para eventos independentes, a probabilidade conjunta de \( A \) e \( B
-          \) é:
-        </p>
-        <div class="formula">\[ P(A \cap B) = P(A) \cdot P(B). \]</div>
-        <p>A probabilidade condicional de \( A \) dado \( B \) é:</p>
-        <div class="formula">
-          \[ P(A \mid B) = \frac{P(A \cap B)}{P(B)}, \text{ se } P(B) > 0. \]
-        </div>
-      </section>
+  <section>
+    <h1 style="text-align: center">Restrições do Problema</h1>
+    <p>
+      As restrições definem os limites do problema e representam as condições que
+      devem ser respeitadas para que a solução seja viável. Elas são expressas por
+      inequações ou equações lineares.
+    </p>
+    <div class="formula">
+      \[
+        \begin{cases}
+          a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n \leq b_1 \\
+          a_{21}x_1 + a_{22}x_2 + \dots + a_{2n}x_n \leq b_2 \\
+          \vdots \\
+          a_{m1}x_1 + a_{m2}x_2 + \dots + a_{mn}x_n \leq b_m
+        \end{cases}
+      \]
+    </div>
+    <p>
+      Além disso, normalmente impõe-se a condição de não negatividade:
+    </p>
+    <div class="formula">
+      \[
+        x_1, x_2, \dots, x_n \geq 0
+      \]
+    </div>
+  </section>
 
-      <section>
-        <h1 style="text-align: center">Variáveis Aleatórias</h1>
-        <p>
-          Uma variável aleatória associa cada evento em um espaço amostral a um
-          número real. A esperança matemática (\( E(X) \)) de uma variável
-          aleatória \( X \) é:
-        </p>
-        <div class="formula">
-          \[ E(X) = \sum_{i=1}^n x_i \cdot P(X = x_i), \text{ para variáveis
-          discretas.} \]
-        </div>
-        <p>Para variáveis contínuas, a esperança é:</p>
-        <div class="formula">
-          \[ E(X) = \int_{-\infty}^{\infty} x \cdot f(x) \, dx, \]
-        </div>
-        <p>onde \( f(x) \) é a função densidade de probabilidade.</p>
-      </section>
-
-      <section>
-        <h1 style="text-align: center">Intervalos de Confiança</h1>
-        <p>
-          Intervalos de confiança indicam a faixa dentro da qual esperamos que o
-          parâmetro da população esteja, com um certo nível de confiança
-          (geralmente 95% ou 99%). Para a média (\( \mu \)), o intervalo de
-          confiança é:
-        </p>
-        <div class="formula">
-          \[ \bar{x} \pm z \cdot \frac{\sigma}{\sqrt{n}}, \]
-        </div>
-        <p>
-          onde \( \bar{x} \) é a média amostral, \( z \) é o valor crítico da
-          distribuição normal, \( \sigma \) é o desvio padrão e \( n \) é o
-          tamanho da amostra.
-        </p>
-      </section>
-    </main>
+  <section>
+    <h1 style="text-align: center">Solução Ótima</h1>
+    <p>
+      A solução ótima é aquela que satisfaz todas as restrições do problema e,
+      ao mesmo tempo, fornece o melhor valor possível para a função objetivo.
+      Graficamente, em problemas com duas variáveis, essa solução costuma estar
+      localizada em um dos vértices da região factível.
+    </p>
+    <p>
+      Para resolver problemas de Programação Linear, podem ser utilizados métodos
+      como o método gráfico, o método Simplex e ferramentas computacionais
+      especializadas.
+    </p>
+  </section>
+</main>
     <footer id="footer"></footer>
   </body>
 </html>
