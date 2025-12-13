@@ -3,7 +3,7 @@ const footer = document.querySelector('#footer');
 
 header.innerHTML = `<nav class="header__container__navs">
         <ul>
-            <li><a href="./app.html">Inicio</a></li>
+            <li><a href="./index.html">Inicio</a></li>
             <li><a href="./calculo.html">Programação Linear</a></li>
             <li><a href="./videos.html">Videos</a></li>
             <li><a href="./ferramentas.html">Ferramentas didáticas</a></li>
